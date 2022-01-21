@@ -1,17 +1,38 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Nav.css';
 
-function Nav() {
-    return (
+function Test(props){
+    if (props.test){
+        return 'TEST'
+    }
+    else {
+        return false
+    }
+}
 
+function Nav() {
+    
+    function clickUtilisateurs() {
+        console.log('utilisateurs');
+    }
+    function clickAuteurs() {
+        console.log('auteurs');
+    }
+    function clickGenres() {
+        console.log('genres');
+    }
+    return (
+        <>
         <nav>
 
-            <button type="button" >Utilisateur</button>
-            <button type="button" >Auteur</button>
-            <button type="button" >Genre</button>
+            <button type="button" onClick={clickUtilisateurs()}>Utilisateurs</button>
+            <button type="button" onClick={clickAuteurs()}>Auteurs</button>
+            <button type="button" onClick={clickGenres()}>Genres</button>
 
         </nav>
 
+        <Test test={utilisateurs}/>
+        </>
     );
 }
 

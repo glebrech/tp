@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  
+  background-color: #285a68;
+  border-radius: 10%;
+  color: whitesmoke;
+  
+
+}

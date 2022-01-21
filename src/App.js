@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Nav from './composants/Nav/Nav';
 
 
 function App() {
@@ -9,13 +10,7 @@ function App() {
         <p>
           Application de bibliothèque
         </p>
-        <nav>
-
-          <button>User</button>
-          <button>Auteur</button>
-          <button>Genre</button>
-
-        </nav>
+        <Nav/>
 
         <img src={logo} className="App-logo" alt="logo" />
       </header>

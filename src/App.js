@@ -11,16 +11,9 @@ function App() {
         </p>
         <nav>
 
-          <p>
-            User
-          </p>
-
-          <p>
-            Auteur
-          </p>
-          <p>
-            Genre
-          </p>
+          <button>User</button>
+          <button>Auteur</button>
+          <button>Genre</button>
 
         </nav>
 

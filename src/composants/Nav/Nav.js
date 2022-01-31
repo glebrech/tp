@@ -1,41 +1,29 @@
-import React, {useState} from 'react';
-import './Nav.css';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-function Test(props){
-    if (props.test){
-        return 'TEST'
-    }
-    else {
-        return false
-    }
-}
-
-function Nav() {
-    
-    function clickUtilisateurs() {
-        console.log('utilisateurs');
-    }
-    function clickAuteurs() {
-        console.log('auteurs');
-    }
-    function clickGenres() {
-        console.log('genres');
-    }
+const Nav = () => {
     return (
-        <>
-        <nav>
+        <div class='navigation'>
+            <button> <NavLink exact to="/" activeClassName="nav-active" >
+                Accueil
+            </NavLink></button>
+            <button><NavLink exact to="/Auteurs" activeClassName="nav-active">
+                Auteurs
+            </NavLink></button>
 
-            <button type="button" onClick={clickUtilisateurs()}>Utilisateurs</button>
-            <button type="button" onClick={clickAuteurs()}>Auteurs</button>
-            <button type="button" onClick={clickGenres()}>Genres</button>
+            <button><NavLink exact to="/Genres" activeClassName="nav-active">
+                Genres
+            </NavLink></button>
 
-        </nav>
+            <button><NavLink exact to="/Utilisateurs" activeClassName="nav-active">
+                Utilisateurs
+            </NavLink></button>
+            <button> <NavLink exact to="/Utilisateurs" activeClassName="nav-active">
+                Utilisateurs
+            </NavLink></button>
 
-        <Test test={utilisateurs}/>
-        </>
+        </div>
     );
-}
-
-
+};
 
 export default Nav;

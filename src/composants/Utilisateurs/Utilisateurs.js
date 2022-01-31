@@ -1,15 +1,19 @@
 import React from 'react';
-import './Utilisateurs.css';
+import Nav from '../Nav/Nav';
+import { NavLink } from 'react-router-dom';
 
-
-   
 
 function Utilisateurs() {
-    
+
     return (
 
         <div>
-            Liste des Utilisateurs
+            <Nav />
+            <h1>Utilisateurs</h1>
+            <ul>
+                <li> <NavLink exact to="/Utilisateurs/Dupont" activeClassName="nav-active" >Dupont</NavLink></li>
+            </ul>
+
         </div>
 
     );

@@ -5,10 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  text-align: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+li {
+  color: #61dafb;
+  font-size: x-large;
+}
+
+button {
+  
+  background-color: #285a68;
+  border-radius: 10%;
+  color: whitesmoke;
+  
+
+}
+
+h1 {
+  color: #61dafb;
+}
+
+.navigation{
+  margin-top:  5%;
 }
 

@@ -18,9 +18,7 @@ const Nav = () => {
             <button><NavLink exact to="/Utilisateurs" activeClassName="nav-active">
                 Utilisateurs
             </NavLink></button>
-            <button> <NavLink exact to="/Utilisateurs" activeClassName="nav-active">
-                Utilisateurs
-            </NavLink></button>
+           
 
         </div>
     );
